@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html
+  xmlns:th="http://www.thymeleaf.org"
+  th:replace="normal/base::layout(~{::section})"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <section>
+      <div class="card mr-3 ml-3"th:if=${contact} >
+        <div class="card-body" >
+          <div class="text-center">
+            <h1>Contact Details</h1>
+            <img
+              src=""
+              style="height: 200px; width: 200px"
+              class="my_profile_picture"
+              th:src="@{'/images/'+${contact.Imageurl}}"
+              alt="profile photo"
+            />
+            <h3>
+              <span th:text="${contact.Name}"></span>(<span
+                th:text="${contact.Secondname}"
+              ></span
+              >)
+            </h3>
+
+            <table class="table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">
+                    SCMUSER<span th:text="${contact.Cid}"></span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Email</th>
+                  <td><span th:text="${contact.Email}"></span></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Phone</th>
+                  <td><span th:text="${contact.Phone}"></span></td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Work</th>
+                  <td><span th:text="${contact.Work}"></span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="description mt-3">
+              <th:block th:utext="${contact.Description}"></th:block>
+
+              <div class="container">
+                <button  th:onclick="|deleteContact(${contact.Cid})|" class="btn btn-block btn-danger btn">Delete</button>
+                
+                
+                
+              <form method="post" th:action="@{'/user/update-contact/'+${contact.Cid}}" class="mt-2">
+								
+								<button type="submit" class="btn btn-block btn-primary btn-sm">Update</button>
+								
+								</form>
+               
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+      </div>
+      <h1 class="text-center p-3 bg-danger" th:unless=${contact}>you don't have access to this contact</h1>
+    </section>
+  </body>
+</html>
