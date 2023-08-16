@@ -3,6 +3,7 @@
 Smart Contact Manager is a web-based application that enables users to efficiently manage their contacts. The application allows users to create, delete, and update contacts, providing a streamlined way to organize contact information.
 
 ![homepage](https://github.com/zahidulhasan95503/smart-contact-manager/assets/102205229/29a09cbe-5d14-43df-91d2-d5926def2043)
+![crud image](https://github.com/zahidulhasan95503/smart-contact-manager/assets/102205229/39271d57-1cc4-4ded-8fca-ac4ad232b494)
 
 
 ## Table of Contents
