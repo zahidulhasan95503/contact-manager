@@ -6,7 +6,7 @@ Smart Contact Manager is a web-based application that enables users to efficient
 ![homepage](https://github.com/zahidulhasan95503/smart-contact-manager/assets/102205229/29a09cbe-5d14-43df-91d2-d5926def2043)
 ## Signup Page
 ![signup for users](https://github.com/zahidulhasan95503/smart-contact-manager/assets/102205229/b17589f9-8db3-4a5c-ace2-018f3213b210)
-## Login Page
+## Login Pages
 ![Login for users](https://github.com/zahidulhasan95503/smart-contact-manager/assets/102205229/8560f853-d7e0-4ba6-9813-04d72df3a736)
 
 ## Add, Update, View, And Delete
